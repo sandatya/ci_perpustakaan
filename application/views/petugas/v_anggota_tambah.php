@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header text-center">
+            <h4>Tambah Anggota Baru</h4>
+
+        </div>
+
+        <div class="card-body">
+            <a href="<?php echo base_url().'petugas/anggota' ?>" class='btn btn-sm btn-light btn-outline-dark pull-right'><i class="fa fa-arrow-left"></i> Kembali<a/>
+            <br>
+            <br>
+
+            <form method="post" action="<?php echo base_url().'petugas/anggota_tambah_aksi'; ?>">
+                <div class="form-group">
+                    <label for="nama" class="font-weight-bold">Nama Lengkap</label>
+                    <input type="text" class="form-control" name="nama" placeholder="Masukkan nama lengkap" required="required">
+                </div>
+
+                <div class="form-group">
+                    <label for="nik" class="font-weight-bold">NIK</label>
+                    <input type="number" class="form-control" name="nik" placeholder="Masukkan Nik" required="required">
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat" class="font-weight-bold">Alamat</label>
+                    <textarea class="form-control" name="alamat" placeholder="Masukkan alamat" required="required"></textarea>
+                </div>
+
+                <input type="submit" class="btn btn-primary" value="Simpan">
+            </form>
+        </div>
+    </div>
+</div>
